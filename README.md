@@ -11,8 +11,9 @@
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+* Architectural Diagram
+  ![CI_CD Architecture](https://github.com/user-attachments/assets/53c8e20d-4d5a-48d5-a2b2-aa11282c6451)
+
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
@@ -32,18 +33,22 @@
 The output should look similar to this:
 
 ```bash
+tunde [ ~/Flask-ML-Service] $ ./make_predict_azure_app.sh
 udacity@Azure:~$ ./make_predict_azure_app.sh
 Port: 443
-{"prediction":[20.35373177134412]}
+{"prediction":[2.431574790057212]}
 ```
 
-* Output of streamed log files from deployed application
+<img width="1399" alt="Screenshot 2025-04-13 at 8 51 52 pm" src="https://github.com/user-attachments/assets/71ecd092-cc37-484d-82c8-7d0580499e8c" />
 
-> 
+
+* Output of streamed log files from deployed application
+<img width="1413" alt="Screenshot 2025-04-13 at 8 55 30 pm" src="https://github.com/user-attachments/assets/e12bb428-6a28-4460-9901-c58f837b982c" />
+
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+[x] Build a proper GUI for the prediction.
 
 ## Demo 
 
