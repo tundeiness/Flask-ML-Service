@@ -12,6 +12,8 @@
 ## Instructions
 
 * Architectural Diagram
+
+
   ![CI_CD Architecture](https://github.com/user-attachments/assets/53c8e20d-4d5a-48d5-a2b2-aa11282c6451)
 
 
