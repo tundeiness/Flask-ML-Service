@@ -2,7 +2,6 @@ setup:
 	python3 -m venv ~/.udacity-devops
 
 install:
-	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
 test:
