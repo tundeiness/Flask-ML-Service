@@ -402,7 +402,8 @@ Port: 443
 
 ## Enhancements
 
-[x] Build a proper GUI for the prediction.
+[x] Build a proper web GUI for the prediction.
+Currently, the web interface displays a static message ("sklearn prediction") while predictions are only visible through the terminal in JSON format. In future iterations, the project can be improved by integrating real-time prediction results directly into the web UI. This would involve capturing user input via the frontend, sending it to the Flask backend for inference, and displaying the structured output dynamically on the website for better usability.
 
 ## Demo 
 
