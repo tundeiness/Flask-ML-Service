@@ -16,31 +16,26 @@ This Project implements a CI/CD Pipeline for Flask-Ml-Service.
   ![CI_CD Architecture](https://github.com/user-attachments/assets/53c8e20d-4d5a-48d5-a2b2-aa11282c6451)
 
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
-
-
 
 ### Setting up a GitHub repository
 
 Log into your Github account and create a new repository containing the flask application or clone it in your azure portal.
 run the following code in azure cloud shell after connecting your cloud shell with github:
 
-git clone https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code](https://github.com/tundeiness/Flask-ML-Service/edit/main/README.md.git
-Clone the new repo
-Change the username below
-git clone https://github.com/[username]/flask-ml-service.git
-Copy the files from *nd082-Azure-Cloud-DevOps-Starter-Code/C2-AgileDevelopmentwithAzure/azure_pipelines_exercise/starter_files/* to the new repo manually.
-cp -r nd082-Azure-Cloud-DevOps-Starter-Code/C2-AgileDevelopmentwithAzure/azure_pipelines_exercise/starter_files/ flask-ml-service/
-Change the repo path as applicable to you.
-cd flask-ml-service
+- git clone https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code](https://github.com/tundeiness/Flask-ML-Service/edit/main/README.md.git
+- Clone the new repo
+- Change the username below
+- git clone https://github.com/[username]/flask-ml-service.git
+- cd flask-ml-service
+  
 Prepare for a push
-git add -A
-git status
-git commit -m "Upload the starter flask app"
-git push
+- git add -A
+- git status
+- git commit -m "Upload the starter flask app"
+- git push
 
 
-After "pushing" the new repository, ensure to enable Azure Pipelines. To enable it in your Github, navigate to https://github.com/marketplace/azure-pipelines(opens in a new tab)
+After "pushing" the new repository, ensure to enable Azure Pipelines. To enable this in your Github, navigate to https://github.com/marketplace/azure-pipelines
 
 Install/enable the Azure Pipelines marketplace app.
 
@@ -62,12 +57,15 @@ In your Azure Cloud shell environment, clone the GitHub repository you created. 
 
 2. To run the app locally Create a virtual environment, install the dependencies, and run the app
 
+  ```bash 
+     python3 -m venv ~/.myvenv
    
-   python3 -m venv ~/.myvenv
-   source ~/.myvenv/bin/activate
-   make install
-   python -m flask run
-
+     source ~/.myvenv/bin/activate
+   
+     make install
+   
+     python -m flask run
+  ```
 
    
 4. Create a web app service
@@ -86,9 +84,6 @@ In your Azure Cloud shell environment, clone the GitHub repository you created. 
    and change `<yourappname>` in this line `-X POST https://<yourappname>.azurewebsites.net:$PORT/predict` to the unique app name.
 
    Subsequently, run `./make_predict_azure_app.sh` to see the prediction.
-9. 
-10. ff
-11. 
 
 
 
@@ -106,6 +101,7 @@ go to Azure devops Portal >> Organization settings >> Policies
 Create a new DevOps project in the newly created DevOps org by selecting `New`
 
 3. Set up a Service connection
+   
 Go to the Project settings >> Service connection settings >> Azure Resource Manager and
 Service principal (`Automatic` if you are using your personal Azure account).
 Click `Next`.
@@ -118,6 +114,7 @@ Save your Service Connection, by clicking save.
 
 
 ### Setting up an Agent (VM)
+
 For the DevOps pipeline, you will be setting up an Agent in place. An Agent is a VM that will perform the pipeline jobs, such as 
 building your code residing in Github and deploying it to the Azure services.
 
@@ -170,11 +167,13 @@ After you SSH into the VM, install Docker by running `sudo snap install docker`
 
 Configure the virtual machine to run Docker, and `exit` to persist the configurations:
 
+
 ```bash
     sudo groupadd docker
     sudo usermod -aG docker $USER
     exit
 ```
+
 Restart the Linux VM from Azure portal to apply changes made in previous steps and login back again.
 
 
