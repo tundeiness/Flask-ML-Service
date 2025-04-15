@@ -2,6 +2,7 @@
 # Overview
 
 This Project implements a CI/CD Pipeline for Flask-Ml-Service.
+This project demonstrates the end-to-end implementation of a CI/CD pipeline for a Flask-based machine learning web service. Starting from scratch, you'll scaffold a GitHub repository and implement essential DevOps practices including linting, testing, and package installation using GitHub Actions. The pipeline is further extended to enable Continuous Delivery by integrating with Azure Pipelines, deploying the application seamlessly to Azure App Service. This project showcases a practical approach to modern DevOps workflows by combining automation, testing, and cloud deployment.
 
 ## Project Plan
 
