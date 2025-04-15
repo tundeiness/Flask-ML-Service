@@ -1,5 +1,5 @@
-pytest==6.0.1
-pylint==2.5.3
-jupyter==6.1.1
-pytest-cov==2.10.0
-click==5.1.0
+pytest
+pylint
+jupyter
+pytest-cov
+click
