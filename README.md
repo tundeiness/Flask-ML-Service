@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/HRHtunde/Flask-ML-Service/_apis/build/status%2Ftundeiness.Flask-ML-Service?branchName=main)](https://dev.azure.com/HRHtunde/Flask-ML-Service/_build/latest?definitionId=9&branchName=main)
+[![Build Status](https://dev.azure.com/HRHtunde/udacityFlaskApp001/_apis/build/status%2Ftundeiness.Flask-ML-Service?branchName=main)](https://dev.azure.com/HRHtunde/udacityFlaskApp001/_build/latest?definitionId=10&branchName=main)
 # Overview
 
 This Project implements a CI/CD Pipeline for Flask-Ml-Service.
