@@ -5,7 +5,7 @@ This Project demonstrates the end-to-end implementation of a CI/CD pipeline for 
 
 ## Project Plan
 
-* [Trello board for the project](https://trello.com/b/RLFYcLeJ/cloud-devops-project-mgt)
+* [Trello board for the project](https://trello.com/invite/b/67df4756e3b21ffbf89f24cb/ATTI7736b95b4d9e4e6d559eb5b19ea9f81f11AA0451/cloud-devops-project-mgt)
 * [Quarterly & Yearly Plan](https://docs.google.com/spreadsheets/d/1xOI2u_aXIeydSlZv_z28VMv-HAIiq7T5bD3Z_EDui_o/edit?usp=sharing)
 
 ## Instructions for running the project
