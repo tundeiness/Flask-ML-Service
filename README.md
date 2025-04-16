@@ -605,13 +605,9 @@ Edit the yaml file to run a build job)<img width="1413" alt="Screenshot 2025-04-
 (deployment successful)<img width="1429" alt="Screenshot 2025-04-14 at 8 02 49 pm" src="https://github.com/user-attachments/assets/115aa56c-d04d-48c1-81ab-6716c0617626" />
 
 
-
-
 <img width="1399" alt="Screenshot 2025-04-13 at 8 51 52 pm" src="https://github.com/user-attachments/assets/71ecd092-cc37-484d-82c8-7d0580499e8c" />
 
 
-* Output of streamed log files from deployed application
-<img width="1413" alt="Screenshot 2025-04-13 at 8 55 30 pm" src="https://github.com/user-attachments/assets/e12bb428-6a28-4460-9901-c58f837b982c" />
 
 
 ## Enhancements
