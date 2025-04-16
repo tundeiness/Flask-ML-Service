@@ -5,14 +5,37 @@
 
 trigger:
 - main
+- build
 
 pool: flaskfoolagent
+variables:
+  azureServiceConnectionId: 'myConnection'
+  webAppName: 'udacityFlaskApp001'
+  projectRoot: $(System.DefaultWorkingDirectory)
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+stages:
+- stage: build
+  displayName: Build stage
+  jobs:
+    - job: BuildJob
+      pool: flaskfoolagent
+      steps:
+        - script: |
+            export PATH=$HOME/.local/bin:$PATH
+            python3.10 -m pip install -r requirements.txt
+          workingDirectory: $(projectRoot)
+          displayName: 'Step - Install requirements.txt'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+        - task: ArchiveFiles@2
+          displayName: "Step - Archive files (artifacts)"
+          inputs:
+            rootFolderOrFile: '$(projectRoot)'
+            includeRootFolder: false
+            archiveType: 'zip'
+            archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+            replaceExistingArchive: true
+
+        - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+          displayName: 'Step - Upload package'
+          artifact: drop
+
