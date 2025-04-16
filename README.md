@@ -1,4 +1,6 @@
 [![Build Status](https://dev.azure.com/HRHtunde/udacityFlaskApp001/_apis/build/status%2Ftundeiness.Flask-ML-Service?branchName=build)](https://dev.azure.com/HRHtunde/udacityFlaskApp001/_build/latest?definitionId=10&branchName=build)
+
+[![Build Status](https://dev.azure.com/HRHtunde/udacityFlaskApp001/_apis/build/status%2Ftundeiness.Flask-ML-Service?branchName=build&jobName=BuildJob)](https://dev.azure.com/HRHtunde/udacityFlaskApp001/_build/latest?definitionId=10&branchName=build)
 # Overview
 
 This Project implements a CI/CD Pipeline for Flask-Ml-Service.
