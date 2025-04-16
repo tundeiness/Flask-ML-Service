@@ -408,6 +408,6 @@ Currently, the web interface displays a static message ("sklearn prediction") wh
 
 ## Demo 
 
-[screencast link](https://drive.google.com/file/d/1IxpxvmrHzeK8fcAcuJA4OTATKGI8tF1h/view?usp=sharing)
+[screencast link](https://www.loom.com/share/f55a37e06d0540a3b24fe0c2ddfb9a9d?sid=505f208f-73e6-4f98-83b7-60eb0ef51e85)
 
 
